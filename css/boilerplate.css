@@ -1,0 +1,658 @@
+ /*!
+ * Rapid Bootstrap 1.01 Customized CSS
+ */
+ 
+body {
+    min-width: 297px;
+} 
+ 
+/* ===== [ Text Class Styles ] ===== */
+.white-text {
+    color: #ffffff !important; 
+}
+
+.left-text {
+    text-align: left !important;
+}
+
+/* ===== [ Header Style ] ===== */
+h3 {
+    margin-bottom: 20px;
+}
+
+.h3-spacer {
+    margin-top: -30px !important;
+}
+ 
+/* ===== [ Page.php Style ] ===== */
+.page-container {
+    padding: 40px;
+}
+
+@media screen and (min-width: 782px) { 
+     .page-container {
+         min-height: 400px;
+     }
+}
+
+/* ===== [ Mobile Styles ] ===== */
+
+@media screen and (min-width: 781px) { 
+     .mar-t-n20 {
+         margin-top: -20px;
+     }
+     .mar-r-n20 {
+         margin-right: -20px;
+     }
+     .mar-b-n20 {
+         margin-bottom: -20px;
+     }
+     .mar-l-n20 {
+         margin-left: -20px;
+     }
+     
+     .mar-t-n40 {
+         margin-top: -40px;
+     }
+     .mar-r-n40 {
+         margin-right: -40px;
+     }
+     .mar-b-n40 {
+         margin-bottom: -40px;
+     }
+     .mar-l-n40 {
+         margin-left: -40px;
+     }
+     
+     .mar-t-n60 {
+         margin-top: -60px;
+     }
+     .mar-r-n60 {
+         margin-right: -60px;
+     }
+     .mar-b-n60 {
+         margin-bottom: -60px;
+     }
+     .mar-l-n60 {
+         margin-left: -60px;
+     }
+}
+
+/* ==============================
+ * ======= Page Templates ======= 
+ * ============================== */
+
+/* ===== [ Featured Image Template ] ===== */
+
+.featured-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 70vh;
+    z-index: 5;
+}
+
+.featured-image-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.featured-text-box {
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    position: absolute;
+    padding: 30px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.target-featured-header {
+    color: white;
+    text-shadow: 1px 1px black;
+    z-index: 10;
+}
+
+.target-featured-text {
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    z-index: 10;
+}
+
+p.target-featured-text {
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+p.source-featured-text {
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+.source-featured-button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    z-index: 15;
+}
+    
+/* ==============================
+ * ====== Theme Components ====== 
+ * ============================== */
+
+/* ===== [ Fix for admin menu overlapping fixed-top Navbar ] ===== */
+
+html #wpadminbar {
+	position: fixed;
+}
+
+.negativeadminmenuspacer {
+    top: -55px;
+}
+
+.fixednavbarspacer {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+ }
+ 
+.notfixednavbarspacer {	
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+  
+.afternavspacer {
+    height: 54px;
+}
+
+/* Adapts to the change in WP-admin bar height on smaller screens */
+@media screen and (max-width: 782px) { 
+ 
+.adminmenuspacer {
+	display: none;
+}
+
+.fixednavbarspacer {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+ }
+}
+
+/* ===== [ Button Styles ] ===== */
+.btn-primary {
+    color: #fff;
+}
+
+.btn.accent-color {
+    border: none;
+    transition: background-color 0.35s ease;
+}
+
+.btn.accent-color:hover {
+
+}
+
+.btn.primary-highlight-color {
+    border: none;
+    transition: background-color 0.35s ease;
+}
+
+.btn.primary-highlight-color:hover {
+
+}
+
+/* ===== [ Alternate Front-page.php ] ===== */
+
+.fullscreen-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: -15;
+}
+
+.fullscreen-image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.fullscreen-text-box {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 40vh;
+}
+
+.fullscreen-contact-ribbon {
+    position: absolute; 
+    bottom: 0; left: 0; width: 100%;
+}
+
+@media screen and (max-width: 767px) { 
+ 
+.fullscreen-contact-ribbon {
+    position: relative;
+}
+}
+
+/* ===== [Parallax Image Style ] ===== */
+
+.parallaxParent {
+	height: 80vh;
+	overflow: hidden;
+}
+
+.parallaxParent > * {
+	height: 200%;
+	position: relative;
+	top: -100%;
+}
+
+.parallaxTitle {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.parallaxImage {
+	background-position: center top !important;
+}
+
+/* ===== Parallax for Homepage ===== */
+.parallax1Title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.parallax1Image {
+	background-position: center top !important;
+}
+	
+.parallax2Title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.parallax2Image {
+	background-position: center top !important;
+}
+	
+html, body {
+    overflow-x: hidden;
+}
+
+/* ===== [ Padding Style ] ===== */
+
+.pad-t-20 {
+    padding-top: 20px;
+}
+.pad-b-20 {
+    padding-bottom: 20px;
+}
+.pad-r-20 {
+    padding-right: 20px;
+}
+.pad-l-20 {
+    padding-left: 20px;
+}
+
+.pad-t-40 {
+    padding-top: 40px;
+}
+.pad-b-40 {
+    padding-bottom: 40px;
+}
+.pad-r-40 {
+    padding-right: 40px;
+}
+.pad-l-40 {
+    padding-left: 40px;
+}
+
+.pad-t-60 {
+    padding-top: 60px;
+}
+.pad-b-60 {
+    padding-bottom: 60px;
+}
+.pad-r-60 {
+    padding-right: 60px;
+}
+.pad-l-60 {
+    padding-left: 60px;
+}
+
+.pad-t-80 {
+    padding-top: 80px;
+}
+.pad-b-80 {
+    padding-bottom: 80px;
+}
+.pad-r-80 {
+    padding-right: 80px;
+}
+.pad-l-80 {
+    padding-left: 80px;
+}
+
+/* ===== [ Nav Bar Style ] ===== */
+
+.nav-link {
+    transition: color 0.5s ease !important;
+}
+
+.navbar {
+    min-width: 297px;
+}
+
+.nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* -- Dropdown Menu Style --- */
+	.dropdown-item a {
+	    color: #373D42 !important;
+	    transition: color 0.5s ease;
+	}
+	
+	.dropdown-item a:hover {
+	    color: #000000 !important;
+	}
+	
+	a.dropdown-item {
+            color: #373D42 !important;
+            transition: background-color 0.5s ease;
+	}
+
+	.dropdown-item:hover {
+		color: #16181b;
+		background-color: #e4e5e6;
+	}
+	
+	.dropdown-item:focus {
+		color: #16181b;
+		background-color: #e4e5e6;
+	}
+	
+	.dropdown-item.active {
+		color: #fff;
+		background-color: #007bff;
+	}
+	
+	.dropdown-item:active {
+		color: #fff;
+		background-color: #007bff;
+	}
+	 
+/* ===== [ Nav Brand Text] ===== */
+.nav_brand_text {
+    padding-left: 10px;
+}
+
+.nav_brand_text a {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav_brand_text a:link {
+    color: #ffffff !important;
+}
+
+.nav_brand_text a:hover {
+    color: #ffffff !important;
+}
+
+/* ===== [ Carousel Style ] ===== */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  background-color: #777;
+}
+
+.carousel-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    z-index: 5;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100vh;
+}
+  
+/* ===== [ Focus Ribbon Style ] ===== */
+#focus-ribbon {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ribbon-objects {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.focus-icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 782px) { 
+	.focus-ribbon-columns {
+	    padding: 20px 20px 20px 20px;
+	}
+	.bottom-border {
+	    border-bottom: solid 1px #dddddd;
+	    padding-bottom: 40px;
+	}
+}
+
+/* ===== [ Action Ribbon Style ] ===== */
+#action-ribbon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+h5.action-ribbon-span {
+    display: inline;
+}
+
+@media screen and (max-width: 782px) { /* Makes Action-Ribbon disappear on mobile screens */
+	#action-ribbon {
+	    display: none;
+	}
+}
+
+/* ===== [ Info Ribbon Style ] ===== */
+.info-ribbon {
+    color: #ffffff;
+    padding: 60px 20px 60px 20px;
+}
+
+.hours-info {
+    padding-left: 80px;
+}
+
+.info-table {
+    margin: 1em auto;
+}
+
+.info-table td {
+    padding-right: 20px;
+}
+
+/* ===== [ About Us Style ] ===== */
+#about-us-ribbon {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* ===== [ Contact Style ] ===== */
+#contact-ribbon {
+    padding: 40px 20px 20px 20px;
+}
+
+.contact-ribbon-icons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p.contact-ribbon-span {
+    color: #cccccc;
+    padding-top: 20px;
+}
+
+
+/* ===== [ Contact Form Style ] ===== */
+.contact-form-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 60px 20px 60px 20px;
+}
+
+/* ===== [ Footer Style ] ===== */
+
+.blog-footer {
+    background-color: #373D42;
+    border: none;
+}
+
+#footer-block {
+    padding: 40px 20px 40px 20px;
+    border-top: 1px solid #999;
+}
+
+.footer-menu ul {
+    font-weight: bold;    
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    padding-right: 40px;
+    list-style-position: outside;
+
+}
+
+.footer-menu li a {
+    margin: 2px;
+    display: inline-block;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-menu li a:hover {
+    background: #50A2D1;
+    color: #ffffff;
+    transition: .2s ease-in;
+}
+
+.sub-menu li {
+    font-weight: normal;
+}
+
+/* ===== [ Social Sidebar Style ] ===== */
+
+#social-sidebar {
+    position: fixed;
+}
+
+.social-sidebar-item {
+    transition: transform .2s;
+}
+
+.social-sidebar-item:hover {
+    transform: scale(1.2);
+}
+
+/* ===== [ Copyright Style ] ===== */
+
+#copyright {
+    color: #cccccc;
+    padding: 15px 20px 1px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===== [ Card Style ] ===== */
+
+.card-header {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #000000;
+}
+
+.card-title-spacing {
+    margin-bottom: 15px;
+    color: #999999;
+}
+
+.card {
+    margin-top: 30px;
+}
+
+.custom-card-border {
+    border-color: #afafaf !important;
+}
+
+/* ==============================
+ * ===== Single-Use Styles ====== 
+ * ============================== */
+
+@media screen and (max-width: 782px) { 
+    .image-collapse {
+        display: none;
+    }
+}

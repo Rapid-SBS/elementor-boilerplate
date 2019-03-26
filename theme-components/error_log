@@ -1,0 +1,12 @@
+[06-Feb-2018 18:36:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_theme_support() in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php on line 37
+[06-Feb-2018 18:36:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_theme_support() in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php on line 37
+[06-Feb-2018 18:37:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_theme_support() in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/zacg3p3cjcrx/public_html/wp-content/themes/rapid_bootstrap_1.01/theme-components/bootstrap-customizer.php on line 37
