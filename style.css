@@ -10,26 +10,6 @@ Text Domain: Rapid
 */
 
 /* --- File Structure ---
-╟ [css]
-║  └ boilerplate.css (custom css code to override bootstrap.min.css)
-╟ [img] (folder for all images/icons)
-╟ [includes]
-║  └ 
-╟ [js]
-║  └ 
-╙ [template-parts] (folder for all codeblocks used by front-page.php and index.php)
-- comments.php
-- content-single.php
-- content-php
-- footer.php
-- front-page.php
-- functions.php (scripts, stylesheets, includes, actions, and custom functions)
-- header.php
-- index.php
-- page.php
-- screenshot.png (image preview in theme selection)
-- sidebar.php
-- single.php
-- style.css
 
-/* ----- Change Notes ----- */
+
+ ----- Change Notes ----- */
