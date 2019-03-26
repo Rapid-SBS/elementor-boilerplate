@@ -1,7 +1,7 @@
 <!-- footer.php --> 
-<footer id="blog-footer">	
-	<p id="copyright">Rapid-Boilerplate. A Rapid-SBS production.</p>
-</footer>
-	<?php wp_footer(); ?> 
+  <footer id="blog-footer">	
+  </footer>
+  <?php wp_footer(); ?> 
+<!-- insert scripts here -->
 </body>
 </html>
