@@ -3,7 +3,7 @@ Theme Name: Rapid-Boilerplate
 Theme URI:
 Author: Rapid-SBS
 Author URI: https://github.com/Rapid-SBS
-Description: Simple WordPress Boilerplate theme
+Description: WordPress Boilerplate Tenmplate
 Version: 1.00
 Tags: rapid, boilerplate
 Text Domain: Rapid
@@ -11,14 +11,13 @@ Text Domain: Rapid
 
 /* --- File Structure ---
 ╟ [css]
-║  └ customized.css (custom css code to override bootstrap.min.css)
-╟ [custom_templates] (folder for custom page templates)
+║  └ boilerplate.css (custom css code to override bootstrap.min.css)
 ╟ [img] (folder for all images/icons)
 ╟ [includes]
-║  └ theme-colors.php (function for storing and applying theme colors)
+║  └ 
 ╟ [js]
-║  └ universal-parallax.js (Parallax plugin)
-╙ [theme-components] (folder for all codeblocks used by front-page.php and index.php)
+║  └ 
+╙ [template-parts] (folder for all codeblocks used by front-page.php and index.php)
 - comments.php
 - content-single.php
 - content-php
@@ -34,4 +33,3 @@ Text Domain: Rapid
 - style.css
 
 /* ----- Change Notes -----
-(9/28/2018)
