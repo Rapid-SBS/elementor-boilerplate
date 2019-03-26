@@ -14,13 +14,11 @@
 <body>
 
   <h1>
-    <a href="<?php echo get_option('home'); ?>">
+	<a href="<?php echo get_option('home'); ?>">
 	<?php bloginfo('name'); ?></a>
   </h1>
-  <div class="description">
-	  <?php bloginfo('description'); ?>
+  <div id="blog-description">
+	<?php bloginfo('description'); ?>
   </div>
-	
-  <div class="blog-masthead">
-	<?php get_template_part( '/template-part/nav-bar', 'nav-bar' ); ?> 
+  <div id="blog-masthead">
   </div>
