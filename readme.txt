@@ -1,1 +1,1 @@
-==== Rapid Boilerplate 1.00 ====
+==== Elementor Boilerplate 1.00 ====
