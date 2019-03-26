@@ -13,10 +13,10 @@
   
 <body>
 
-  <h1>
+  <div id="blog-name">
 	<a href="<?php echo get_option('home'); ?>">
 	<?php bloginfo('name'); ?></a>
-  </h1>
+  </div>
   <div id="blog-description">
 	<?php bloginfo('description'); ?>
   </div>
