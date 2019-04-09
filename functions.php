@@ -1,3 +1,4 @@
+<?php
 function bootstrap_theme_setup(){
 	
 	add_theme_support( 'post-thumbnails' );
@@ -9,6 +10,3 @@ function bootstrap_theme_setup(){
             'social-menu'  => 'Social Menu' ,
         ));
     }
-    
-add_action( 'init', 'bootstrap_theme_setup');
-add_theme_support('custom-background');
